@@ -1,6 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
+:root{
+    --color-primary: #444cf7;
+    --color-title: #000;
+    --alig-title: left;
+    --padding-container: 100px 0;
+    --width-container: 90%;
+    --max-width-container: 1200px;
+    --color-btn: #444cf7;
+    --text-btn: #fff;
+    --padding-btn: 20px 35px;
+    --heigth-shape: 18em;
+
+}
+
 
 body{
     font-family: 'Inter', sans-serif;
+    background-color: #e5e5f7;
+opacity: 1;
+background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
 }
+.container{
+    width: var(--width-container);
+    max-width: var(--max-width-container);
+    padding: var(--padding-container);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero{
+    height: 100vh;
+    min-width: 500px;
+    position: relative;
+    --padding-container: 0;
+    
+}
+
+.hero::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: var(--heigth-shape);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    clip-path: polygon(0 100%,100% 100% ,100% 0);
+}
+
+.hero__container{
+     display: grid;
+     height: 100%;
+     grid-template-columns: 3fr 2fr;
+     place-items: center;
+     gap: 20pxs;
+}
+
+.hero__title{
+    font-size: 4rem;
+}
+
+.hero__copy{
+    font-size: 1.2rem;
+    margin: 25px 0;
+}
+
+.hero__cta{
+    display: inline-block;
+    background: var(--color-btn);
+    color: #fff;
+    padding: var(--padding-btn);
+    text-decoration: none;
+}
+
+.hero__img{
+    width: 95%;
+}
+
+
