@@ -99,6 +99,14 @@ background-position: 0 0,10px 10px;
     background-color: var(--color-primary);
 }
 
+.cta{
+    display: inline-block;
+    background: var(--color-btn);
+    color: var(--text-btn);
+    padding: var(--padding-btn);
+    text-align: center;
+    text-decoration: none;
+}
  .instructor{
      text-align: center;
      border-bottom: 2px solid #ccc;
@@ -135,3 +143,24 @@ background-position: 0 0,10px 10px;
      object-fit: cover;
      object-position: top;
  }
+ .about{
+     display: grid;
+     grid-template-columns: 5fr 4fr;
+     place-items: center;
+ }
+
+ .about__course{
+     width: 90;
+ }
+ .about__paragraph{
+     margin: 20px o;
+     line-height: 1.5;
+     font-weight: 300;
+ }
+
+
+ .about__img{
+     width: 95%;
+ }
+
+ 
