@@ -3,7 +3,7 @@
 :root{
     --color-primary: #444cf7;
     --color-title: #000;
-    --alig-title: left;
+    --align-title: left;
     --padding-container: 100px 0;
     --width-container: 90%;
     --max-width-container: 1200px;
@@ -81,4 +81,57 @@ background-position: 0 0,10px 10px;
     width: 95%;
 }
 
+.main{
+    background: #fff;
+}
 
+.title{
+    font-size: 2.5rem;
+    text-align: var(--align-title);
+    color: var(--color-title);
+}
+.title--border::after{
+    content: "";
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    height: 4px;
+    background-color: var(--color-primary);
+}
+
+ .instructor{
+     text-align: center;
+     border-bottom: 2px solid #ccc;
+     --padding-container: 30px 0 60px;
+ }
+
+ .instructor__container{
+     width: 70%;
+     margin: 0 auto;
+ }
+
+ .instructor__name{
+     margin: 20px 0;
+     
+ }
+
+ .instructor__tag{
+     font-weight: 700;
+     color: var(--color-primary);
+     margin-bottom: 20px;
+ }
+
+ .instructor__paragraph{
+     text-align: left;
+     line-height: 1.5;
+     font-style: italic;
+     color: #625a5a;
+ }
+
+ .instructor__img{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     object-fit: cover;
+     object-position: top;
+ }
