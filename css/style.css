@@ -133,7 +133,7 @@ background-position: 0 0,10px 10px;
      text-align: left;
      line-height: 1.5;
      font-style: italic;
-     color: #625a5a;
+     color: #615a5a;
  }
 
  .instructor__img{
@@ -150,10 +150,10 @@ background-position: 0 0,10px 10px;
  }
 
  .about__course{
-     width: 90;
+     width: 90%;
  }
  .about__paragraph{
-     margin: 20px o;
+     margin: 20px 0;
      line-height: 1.5;
      font-weight: 300;
  }
@@ -178,14 +178,14 @@ background-position: 0 0,10px 10px;
      margin: 0 auto;
      margin-top: 60px;
      display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(4, 1fr);
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(4,1fr);
      gap: 20px;
      grid-template-areas: 
-     ".      card1  .     "
-     "card2  card1  card3 "
-     "card2  card4  card3 "
-     ".      card4  .     ";
+     ".     card1 .     "
+     "card2 card1 card3 "
+     "card2 card4 card3 "
+     ".     card4 .     ";
  }
  
  .card__item{
@@ -221,3 +221,22 @@ background-position: 0 0,10px 10px;
  .card__item:nth-last-of-type(1){
      grid-area: card1;
  }
+
+ .card__item:nth-last-of-type(2){
+    grid-area: card2;
+}
+
+.card__item:nth-last-of-type(3){
+    grid-area: card3;
+}
+
+.card__item:nth-last-of-type(4){
+    grid-area: card4;
+}
+
+.course{
+     --color-title: #fff;
+     --color-btn: #fff;
+     --text-btn: #444cf7;
+     color: var(--color-title);
+}
